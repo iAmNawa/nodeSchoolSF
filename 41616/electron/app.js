@@ -4,3 +4,7 @@ electron.app.on('ready', function () {
   var mainWindow = new electron.BrowserWindow({width: 600, height: 800})
   mainWindow.loadURL('file://' + __dirname + '/index.html')
 })
+
+
+
+var viz = new image('#visualization', null, [src], {hullAlgorithm: 'convex'})
